@@ -7,7 +7,7 @@ Download [R-Bench](https://drive.google.com/file/d/1MIFFhFWIMbk44yQGAxvd_0dM1dAn
 Download the images from [Open Image](https://storage.googleapis.com/openimages/web/download_v7.html).
 
 ## Eval
-Run LVLM on R-Bench.
+Run LVLM on R-Bench, the instance-level question tools in ```utils.py```.
 
 And eval with,
 ```
