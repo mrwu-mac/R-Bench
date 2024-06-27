@@ -78,3 +78,12 @@ def draw_box(image_folder, image_file, line, colors, sub_color='red', obj_color=
     draw.rectangle(sub_box, outline=sub_color, width=4)
     draw.rectangle(obj_box, outline=obj_color, width=4)
     return image
+
+def instance_qs_construct(line, type='mask', sub_color='red', obj_color='green'):
+    qs = line["text"]
+    sub, obj = line['subject'], line['object']
+    mode = 'mask' if type == 'mask' else 'bounding box'
+
+    qs = qs.replace(sub.lower(), sub.lower() + ' in {} {}'.format(sub_color, mode))
+    qs = qs.replace(obj.lower(), obj.lower() + ' in {} {}'.format(obj_color, mode))
+    return qs
