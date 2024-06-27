@@ -101,7 +101,7 @@ if __name__ == "__main__":
     parser.add_argument("--question-file", type=str)
     parser.add_argument("--question-id-file", type=str)
     parser.add_argument("--result-file", type=str)
-    parser.add_argument("--error-file", type=str)
+    parser.add_argument("--error-file", type=str, default='output/error.json')
     parser.add_argument("--eval_box", action='store_true', default=False)
     parser.add_argument("--eval_instance", action='store_true', default=False)
     parser.add_argument("--eval_image", action='store_true', default=False)
