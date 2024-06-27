@@ -2,10 +2,9 @@
 ### eval_image
 python eval_pope.py \
     --annotation-dir dataset \
-    --question-file dataset/nocaps/question_v1.json \
-    --question-id-file dataset/nocaps/question_v1_image_ids_holder.json \
-    --result-file output/qwen/question_v1_out.json \
-    --error-file output/qwen/question_v1_error.json \
+    --question-file dataset/image-level_filterd.json \
+    --question-id-file dataset/nocaps/nocaps_image-level_rel_ids_holder.json \
+    --result-file output/qwen/image-level_out.json \
     --eval_image
 
 
@@ -14,8 +13,7 @@ python eval_pope.py \
     --annotation-dir dataset \
     --question-file dataset/nocaps/instance-level_filterd.json \
     --question-id-file dataset/nocaps/instance-level_ids_holder.json \
-    --result-file output/instructblip_13b/question_v2_local_so_r_out_box_color_shift.json \
-    --error-file output/instructblip_13b/question_v2_local_so_r_out_mask_error.json \
+    --result-file output/qwen/instance-level_out.json \
     --eval_instance
 
 ### eval_box
