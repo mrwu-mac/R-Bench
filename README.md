@@ -24,7 +24,7 @@ The main annotation files include:
 - nocaps_pope_obj.json
 - web_data
 ```
-These files contain annotations for image-level, instance-level, pope-object, and web-data questions. For each type, we randomly sampled five subsets into the [type]_ids_[subset].json files.
+These files contain annotations for image-level, instance-level, pope-object, and web-data questions. For each type, we randomly sampled five subsets into the `[type]_ids_[subset].json` files.
 
 Download the images from [Open Image](https://storage.googleapis.com/openimages/web/download_v7.html).
 
