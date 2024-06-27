@@ -16,12 +16,20 @@ url={https://openreview.net/forum?id=xpSlt67vxQ}
 
 
 ## Data
-Download [R-Bench](https://drive.google.com/file/d/1MIFFhFWIMbk44yQGAxvd_0dM1dAnYEmu/view?usp=sharing)
+Download [R-Bench](https://drive.google.com/file/d/1MIFFhFWIMbk44yQGAxvd_0dM1dAnYEmu/view?usp=sharing).
+The main annotation files include:
+```
+- image-level_filterd.json
+- instance-level_filterd.json
+- nocaps_pope_obj.json
+- web_data
+```
+These files contain annotations for image-level, instance-level, pope-object, and web-data questions. For each type, we randomly sampled five subsets into the [type]_ids_[subset].json files.
 
 Download the images from [Open Image](https://storage.googleapis.com/openimages/web/download_v7.html).
 
 ## Eval
-Run LVLM on R-Bench, the instance-level question tools in ```utils.py```, use function ```draw_mask``` and ```draw_box``` to draw the mask and box respectively.
+To run LVLM on R-Bench, use the instance-level question tools in utils.py. Use the draw_mask and draw_box functions to draw the mask and box, respectively.
 
 And eval with,
 ```
