@@ -1,6 +1,8 @@
 # R-Bench
 This repo is for the paper Evaluating and Analyzing Relationship Hallucinations in Large Vision-Language Models (ICML2024).
 
+![teaser](assets/r-bench.png)
+
 ## Data
 Download [R-Bench](https://drive.google.com/file/d/1MIFFhFWIMbk44yQGAxvd_0dM1dAnYEmu/view?usp=sharing)
 
