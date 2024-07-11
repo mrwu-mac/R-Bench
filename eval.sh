@@ -1,6 +1,6 @@
 #!/bin/bash
 ### eval_image
-python eval_pope.py \
+python eval.py \
     --annotation-dir dataset \
     --question-file dataset/image-level_filterd.json \
     --question-id-file dataset/nocaps/nocaps_image-level_rel_ids_holder.json \
@@ -9,7 +9,7 @@ python eval_pope.py \
 
 
 ### eval_instance
-python eval_pope.py \
+python eval.py \
     --annotation-dir dataset \
     --question-file dataset/nocaps/instance-level_filterd.json \
     --question-id-file dataset/nocaps/instance-level_ids_holder.json \
@@ -17,7 +17,7 @@ python eval_pope.py \
     --eval_instance
 
 ### eval_box
-# python eval_pope.py \
+# python eval.py \
 #     --annotation-dir dataset \
 #     --question-file output/qwen/coco_v1_boudning_box_out.json \
 #     --result-file output/qwen/coco_v1_boudning_box_out.json \
@@ -25,7 +25,7 @@ python eval_pope.py \
 
 
 # #### eval_pope_obj
-# python eval_pope.py \
+# python eval.py \
 #     --annotation-dir dataset \
 #     --question-file dataset/nocaps/nocaps_pope_obj_random.json \
 #     --question-id-file dataset/nocaps/question_pope_obj_ids_holder.json\
@@ -33,7 +33,7 @@ python eval_pope.py \
 #     --eval_obj
 
 # #### eval_web
-# python eval_pope.py \
+# python eval.py \
 #     --annotation-dir dataset \
 #     --question-file dataset/web/web_v1.json \
 #     --result-file output/llava1.5_13b/web_v1_out.json \
