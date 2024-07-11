@@ -26,7 +26,7 @@ The main annotation files include:
 ```
 These files contain annotations for image-level, instance-level, pope-object, and web-data questions. For each type, we randomly sampled five subsets into the `[type]_ids_[subset].json` files.
 
-Download the images from [Open Image](https://storage.googleapis.com/openimages/web/download_v7.html).
+Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
 
 ## Eval
 We provide the instance-level question tools in utils.py. Use the draw_mask and draw_box functions to draw the mask and box, respectively.
