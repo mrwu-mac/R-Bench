@@ -35,7 +35,7 @@ To run LVLM on R-Bench using the official inference procedure of the LVLMs, and 
 {"question_id": 1, "text":[model output]}
 ...
 ```
-Tips: We provide instance-level question tools in `utils.py`. Please use the `draw_mask` and `draw_box` functions to draw the mask and box, respectively. Additionally, use the `instance_qs_construct` function to reformat the instance questions.
+Tips: We provide instance-level question tools in `utils.py`. Please use the `draw_mask` and `draw_box` functions to draw the mask and box on input images, respectively. Additionally, use the `instance_qs_construct` function to reformat the instance questions.
 
 And eval with,
 ```
