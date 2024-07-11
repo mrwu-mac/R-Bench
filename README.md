@@ -29,13 +29,13 @@ These files contain annotations for image-level, instance-level, pope-object, an
 Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
 
 ## Eval
-To run LVLM on R-Bench, and format the result-file as,
+To run LVLM on R-Bench using the official inference procedure of the LVLMs, and format the result file as follows:
 ```
 {"question_id": 0, "text":[model output]}
 {"question_id": 1, "text":[model output]}
 ...
 ```
-Tips: We provide the instance-level question tools in utils.py. Use the draw_mask and draw_box functions to draw the mask and box, respectively.
+Tips: We provide instance-level question tools in `utils.py`. Please use the `draw_mask` and `draw_box` functions to draw the mask and box, respectively. Additionally, use the `instance_qs_construct` function to reformat the instance questions.
 
 And eval with,
 ```
