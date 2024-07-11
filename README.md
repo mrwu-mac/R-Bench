@@ -29,7 +29,7 @@ These files contain annotations for image-level, instance-level, pope-object, an
 Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
 
 ## Eval
-To run LVLM on R-Bench using the official inference procedure of the LVLMs, and format the result file as follows:
+To run LVLM on R-Bench using the official inference script of the LVLMs, and format the result file as follows:
 ```
 {"question_id": 0, "text":[model output]}
 {"question_id": 1, "text":[model output]}
