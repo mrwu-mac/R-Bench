@@ -29,13 +29,13 @@ These files contain annotations for image-level, instance-level, pope-object, an
 Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
 
 ## Eval
-We provide the instance-level question tools in utils.py. Use the draw_mask and draw_box functions to draw the mask and box, respectively.
 To run LVLM on R-Bench, and format the result-file as,
 ```
 {"question_id": 0, "text":[model output]}
 {"question_id": 1, "text":[model output]}
 ...
 ```
+Tips: We provide the instance-level question tools in utils.py. Use the draw_mask and draw_box functions to draw the mask and box, respectively.
 
 And eval with,
 ```
