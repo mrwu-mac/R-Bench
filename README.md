@@ -21,10 +21,12 @@ The main annotation files include:
 ```
 - image-level_filterd.json
 - instance-level_filterd.json
-- nocaps_pope_obj.json
+- nocaps_pope_obj_random_image.json
+- nocaps_pope_obj_popular_image.json
+- nocaps_pope_obj_adversarial_image.json
 - web_data
 ```
-These files contain annotations for image-level, instance-level, pope-object, and web-data questions. For each type, we randomly sampled five subsets into the `[type]_ids_[subset].json` files.
+These files contain annotations for image-level, instance-level, pope-object, and web-data questions. For image-level and instance-level questions, we randomly sampled five subsets into the `[type]_ids_[subset].json` files.
 
 Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
 
