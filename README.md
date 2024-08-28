@@ -4,14 +4,20 @@
 This repo is for the paper [Evaluating and Analyzing Relationship Hallucinations in Large Vision-Language Models (ICML2024)](https://www.bing.com/ck/a?!&&p=2f0bd6012a4f4b51JmltdHM9MTcxOTM2MDAwMCZpZ3VpZD0zMjgwNWY0Mi03YmRkLTZkYzEtMTdmNi00YzE3N2FiYjZjODUmaW5zaWQ9NTE4OQ&ptn=3&ver=2&hsh=3&fclid=32805f42-7bdd-6dc1-17f6-4c177abb6c85&psq=Evaluating+and+analyzing+relationship&u=a1aHR0cHM6Ly9hcnhpdi5vcmcvaHRtbC8yNDA2LjE2NDQ5djE&ntb=1).
 
 ```
-@inproceedings{
-wu2024evaluating,
-title={Evaluating and Analyzing Relationship Hallucinations in Large Vision-Language Models},
-author={Mingrui Wu and Jiayi Ji and Oucheng Huang and Jiale Li and Yuhang Wu and Xiaoshuai Sun and Rongrong Ji},
-booktitle={Forty-first International Conference on Machine Learning},
-year={2024},
-url={https://openreview.net/forum?id=xpSlt67vxQ}
-}
+@InProceedings{pmlr-v235-wu24l,
+  title = 	 {Evaluating and Analyzing Relationship Hallucinations in Large Vision-Language Models},
+  author =       {Wu, Mingrui and Ji, Jiayi and Huang, Oucheng and Li, Jiale and Wu, Yuhang and Sun, Xiaoshuai and Ji, Rongrong},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {53553--53570},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/wu24l/wu24l.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/wu24l.html},
+  }
 ```
 
 
