@@ -3,7 +3,7 @@
 python eval.py \
     --annotation-dir dataset \
     --question-file dataset/image-level_filterd.json \
-    --question-id-file dataset/nocaps/nocaps_image-level_rel_ids_holder.json \
+    --question-id-file dataset/nocaps_image-level_rel_ids_holder.json \
     --result-file output/qwen/image-level_out.json \
     --eval_image
 
@@ -11,8 +11,8 @@ python eval.py \
 ### eval_instance
 python eval.py \
     --annotation-dir dataset \
-    --question-file dataset/nocaps/instance-level_filterd.json \
-    --question-id-file dataset/nocaps/instance-level_ids_holder.json \
+    --question-file dataset/instance-level_filterd.json \
+    --question-id-file dataset/instance-level_ids_holder.json \
     --result-file output/qwen/instance-level_out.json \
     --eval_instance
 
@@ -27,8 +27,8 @@ python eval.py \
 # #### eval_pope_obj
 # python eval.py \
 #     --annotation-dir dataset \
-#     --question-file dataset/nocaps/nocaps_pope_obj_random.json \
-#     --question-id-file dataset/nocaps/question_pope_obj_ids_holder.json\
+#     --question-file dataset/nocaps_pope_obj_random.json \
+#     --question-id-file dataset/question_pope_obj_ids_holder.json\
 #     --result-file output/qwen/nocaps_pope_obj_random_out.json \
 #     --eval_obj
 
