@@ -33,7 +33,7 @@ The main annotation files include:
 - web_data
 - instance_mask
 ```
-These files contain annotations for image-level, instance-level, pope-object, and web-data questions. For image-level and instance-level questions, we randomly sampled five subsets into the `[type]_ids_[subset].json` files.
+These files contain annotations for image-level, instance-level(box and mask share same questions), pope-object, and web-data questions. For image-level and instance-level questions, we randomly sampled five subsets into the `[type]_ids_[subset].json` files.
 
 Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
 
