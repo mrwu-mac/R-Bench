@@ -38,7 +38,32 @@ These files contain annotations for image-level, instance-level(box and mask sha
 Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
 
 ## Eval
-To run LVLM on R-Bench using the official inference script of the LVLMs, and format the result.json file as follows:
+**Step1:** To run LVLM on R-Bench using the official inference script of the LVLMs.
+
+For Image-level, pseudocode is as follows,
+```
+for line in questions:
+    question_id = line['question_id']
+    question = line['text']
+    image = open(line['image'])
+    text = model(question, image)
+    answer_file.write(json.dumps("question_id": question_id, "text":text))
+```
+
+For Instance-level, pseudocode is as follows,
+```
+for line in questions:
+    question_id = line['question_id']
+    question = instance_qs_construct(line)
+    if instance_level_box:
+      image = draw_box(line)
+    if instance_level_box:
+      image = draw_mask(line)
+    text = model(question, image)
+    answer_file.write(json.dumps("question_id": question_id, "text":text))
+```
+
+and format the result.json file as follows:
 ```
 {"question_id": 0, "text":[model output]}
 {"question_id": 1, "text":[model output]}
