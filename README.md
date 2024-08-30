@@ -50,6 +50,7 @@ And eval with,
 ```
 sh eval.sh
 ```
+Tips: You can just replace ```--result-file``` with the file you generated, and the ```eval.py``` script will automatically calculate the average results for different subsets.
 
 ## Acknowledge
 The evaluation code is based on [POPE](https://github.com/AoiDragon/POPE).
