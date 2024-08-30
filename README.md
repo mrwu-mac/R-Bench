@@ -22,7 +22,7 @@ This repo is for the paper [Evaluating and Analyzing Relationship Hallucinations
 
 
 ## Data
-Download [R-Bench](https://drive.google.com/file/d/1MIFFhFWIMbk44yQGAxvd_0dM1dAnYEmu/view?usp=sharing).
+Download [R-Bench](https://drive.google.com/file/d/1sqO0MWBg_HXp5cIKb-nstjNEEk5crUWH/view?usp=sharing).
 The main annotation files include:
 ```
 - image-level_filterd.json
@@ -31,6 +31,7 @@ The main annotation files include:
 - nocaps_pope_obj_popular_image.json
 - nocaps_pope_obj_adversarial_image.json
 - web_data
+- instance_mask
 ```
 These files contain annotations for image-level, instance-level, pope-object, and web-data questions. For image-level and instance-level questions, we randomly sampled five subsets into the `[type]_ids_[subset].json` files.
 
