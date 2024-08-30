@@ -38,13 +38,13 @@ These files contain annotations for image-level, instance-level(box and mask sha
 Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
 
 ## Eval
-To run LVLM on R-Bench using the official inference script of the LVLMs, and format the result file as follows:
+To run LVLM on R-Bench using the official inference script of the LVLMs, and format the result.json file as follows:
 ```
 {"question_id": 0, "text":[model output]}
 {"question_id": 1, "text":[model output]}
 ...
 ```
-Tips: We provide instance-level question tools in `utils.py`. Please use the `draw_mask` and `draw_box` functions to draw the mask and box on input images, respectively. Additionally, use the `instance_qs_construct` function to reformat the instance questions.
+Tips: We provide instance-level question tools in `utils.py`. Please use the `draw_mask` and `draw_box` functions to draw the mask or box on input images, respectively. Additionally, use the `instance_qs_construct` function to reformat the instance questions.
 
 And eval with,
 ```
