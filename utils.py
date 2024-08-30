@@ -50,7 +50,7 @@ def show_box(box, ax, label=None, color=None):
 
 def draw_mask(image_folder, image_file, line, colors, sub_color='red', obj_color='green'):
     image = Image.open(os.path.join(image_folder, image_file)).convert('RGBA')
-    mask_file = 'dataset/nocaps/mask_q_v2_local_so_r/' + '{}.png'.format(line['question_id']) 
+    mask_file = 'dataset/instance_mask/' + '{}.png'.format(line['question_id']) 
     mask = Image.open(mask_file)
     resized_mask_image = mask.resize(image.size, resample=Image.NEAREST)
     resized_mask = np.array(resized_mask_image)
