@@ -50,14 +50,14 @@ for line in questions:
     answer_file.write(json.dumps("question_id": question_id, "text":text))
 ```
 
-For Instance-level, pseudocode is as follows,
+For Instance-level, pseudocode is as follows, set ```instance_level_box=True``` or ```instance_level_mask=True``` to get result for Instance-Level result with Box or Mask.
 ```
 for line in questions:
     question_id = line['question_id']
     question = instance_qs_construct(line, type='mask' if instance_level_mask else 'box')
     if instance_level_box:
       image = draw_box(line)
-    if instance_level_box:
+    elif instance_level_mask:
       image = draw_mask(line)
     text = model(question, image)
     answer_file.write(json.dumps("question_id": question_id, "text":text))
