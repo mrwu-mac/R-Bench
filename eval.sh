@@ -16,12 +16,7 @@ python eval.py \
     --result-file output/qwen/instance-level_out.json \
     --eval_instance
 
-### eval_box
-# python eval.py \
-#     --annotation-dir dataset \
-#     --question-file output/qwen/coco_v1_boudning_box_out.json \
-#     --result-file output/qwen/coco_v1_boudning_box_out.json \
-#     --eval_box 
+
 
 
 # #### eval_pope_obj
