@@ -71,7 +71,7 @@ and format the result.json file as follows:
 ```
 Tips: We provide instance-level question tools in `utils.py`. Please use the `draw_mask` and `draw_box` functions to draw the mask or box on input images, respectively. Additionally, use the `instance_qs_construct` function to reformat the instance questions.
 
-And eval with,
+**Step2:** Eval with,
 ```
 sh eval.sh
 ```
