@@ -53,6 +53,7 @@ for line in questions:
 For Instance-level, pseudocode is as follows, set ```instance_level_box=True``` or ```instance_level_mask=True``` to get result for Instance-Level result with Box or Mask.
 ```
 import instance_qs_construct, draw_box, draw_mask
+
 for line in questions:
     question_id = line['question_id']
     question = instance_qs_construct(line, type='mask' if instance_level_mask else 'box')
