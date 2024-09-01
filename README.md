@@ -77,7 +77,7 @@ Tips: We provide instance-level question tools in `utils.py`. Please use the `dr
 ```
 sh eval.sh
 ```
-Tips: You can just replace ```--result-file``` with the file you generated, and the ```eval.py``` script will automatically calculate the average results for different subsets.
+Tips: You can just replace ```--result-file``` with the file you generated, and the ```eval.py``` script will automatically calculate the average results for different subsets. The results obtained through our script are for the ```Subset```, and the results for ```Image(All)``` in the paper are for reference only.
 
 ## Acknowledge
 The evaluation code is based on [POPE](https://github.com/AoiDragon/POPE).
