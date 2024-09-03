@@ -35,7 +35,7 @@ The main annotation files include:
 ```
 These files contain annotations for image-level, instance-level(box and mask share same questions), pope-object, and web-data questions. For image-level and instance-level questions, we randomly sampled five subsets into the `[type]_ids_[subset].json` files.
 
-Download the images from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html).
+Download the images from [image](https://drive.google.com/file/d/10JXRdzTRMylWQA160qdoYITGO10g6N8k/view?usp=sharing) (source from [Open Image validation set (v4)](https://storage.googleapis.com/openimages/web/download_v7.html)).
 
 ## Eval
 **Step1:** To run LVLM on R-Bench using the official inference script of the LVLMs.
