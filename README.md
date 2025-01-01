@@ -73,6 +73,8 @@ and format the result.json file as follows:
 ```
 Tips: We provide instance-level question tools in `utils.py`. Please use the `draw_mask` and `draw_box` functions to draw the mask or box on input images, respectively. Additionally, use the `instance_qs_construct` function to reformat the instance questions.
 
+We provide LLaVA demos for reference. After setting up the LLaVA environment, place the `demos/eval-rbench.py` file into the `llava/eval/` directory and execute `llava-r-bench.sh`.
+
 **Step2:** Eval with,
 ```
 sh eval.sh
