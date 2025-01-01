@@ -48,9 +48,9 @@ def show_box(box, ax, label=None, color=None):
         ax.text(x0, y0, label)
 
 
-def draw_mask(image_folder, image_file, line, colors, sub_color='red', obj_color='green'):
-    image = Image.open(os.path.join(image_folder, image_file)).convert('RGBA')
-    mask_file = 'dataset/instance_mask/' + '{}.png'.format(line['question_id']) 
+def draw_mask(image, line, sub_color='red', obj_color='green'):
+    image = image.convert('RGBA')
+    mask_file = 'data_filterd/instance_mask/' + '{}.png'.format(line['question_id']) 
     mask = Image.open(mask_file)
     resized_mask_image = mask.resize(image.size, resample=Image.NEAREST)
     resized_mask = np.array(resized_mask_image)
@@ -67,8 +67,8 @@ def draw_mask(image_folder, image_file, line, colors, sub_color='red', obj_color
     image.paste(obj_mask_image, (0, 0), obj_mask_image)
     return image
 
-def draw_box(image_folder, image_file, line, colors, sub_color='red', obj_color='green'):      
-    image = Image.open(os.path.join(image_folder, image_file)).convert('RGB')
+def draw_box(image, line, sub_color='red', obj_color='green'):      
+    image = image.convert('RGB')
     w, h = image.size
     draw = ImageDraw.Draw(image)
     # bbox = [bbox[0], bbox[1], bbox[0] + bbox[2], bbox[1] + bbox[3]]
